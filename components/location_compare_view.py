@@ -13,7 +13,7 @@ location_compare_view = html.Div([
                 dbc.Label("Initial Date"),
             ], md=1),
             dbc.Col([
-                dcc.Dropdown(options=dates, value=dates[2], id="lc_initial_date"),
+                dcc.Dropdown(options=dates, value=dates[-1], id="lc_initial_date"),
             ], md=2)
         ]),
         dbc.Row([
